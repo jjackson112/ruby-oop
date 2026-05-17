@@ -6,3 +6,7 @@ puts "Give me a number"
 number = gets.chomp.to_i
 
 puts number + 5 * 2 - 4 / 2
+
+if number >= 20 
+  puts "Wow that's a big number!"
+end
