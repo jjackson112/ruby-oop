@@ -23,3 +23,8 @@ end
 
 dev = Developer.new("Jasmine")
 dev.code
+
+total_pumpkins = 5 + 4
+stoop_pumpkins = total_pumpkins + 19
+
+puts "I had #{total_pumpkins}, but then my friend #{friend} dropped off more. Now I have #{stoop_pumpkins}."
