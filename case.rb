@@ -17,5 +17,7 @@ when 'sunflower'
   puts "Solid choice for a warm and optimistic person."
 when 'orchid'
   puts "Exotic and captivating."
+when 'hydrangea'
+  puts "Versatile, supporting and introverted personality."
 else 
   puts "I'm not familiar with that flower, but all are special!"
