@@ -2,19 +2,20 @@
 
 favorite_flower = "jasmine"
 
-if (favorite_flower == 'rose')
+case favorite_flower
+when 'rose'
   puts "Classic choice for a romantic."
-elsif (favorite_flower == 'lily')
+when 'lily'
   puts "An elegant and refined selection."
-elsif (favorite_flower == 'tulip')
+when 'tulip'
   puts "This flower attracts a positive and creative person."
-elsif (favorite_flower == 'daffodil')
+when 'daffodil'
   puts "A popular and laid-back choice."
-elsif (favorite_flower == 'daisy')
+when 'daisy'
   puts "A free-spirited and authentic flower."
-elsif (favorite_flower == 'sunflower')
+when 'sunflower'
   puts "Solid choice for a warm and optimistic person."
-elsif (favorite_flower == 'orchid')
+when 'orchid'
   puts "Exotic and captivating."
 else 
   puts "I'm not familiar with that flower, but all are special!"
