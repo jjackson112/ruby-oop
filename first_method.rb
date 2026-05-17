@@ -4,6 +4,14 @@ end
 
 my_method
 
+# method that accepts an argument
+
+def greeting(name, time)
+  puts "Good #{time}, #{name}!"
+end
+
+greeting("morning", "Jasmine")
+
 # ask user for number 
 # convert number to integer
 # Ruby does math - output
