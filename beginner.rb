@@ -10,6 +10,20 @@ name = "Jasmine"
 friend = "Adda"
 puts "Hi, #{name}. Where is your friend #{friend}?"
 
+total_pumpkins = 5 + 4
+stoop_pumpkins = total_pumpkins + 19
+
+puts "I had #{total_pumpkins}, but then my friend #{friend} dropped off more. Now I have #{stoop_pumpkins}."
+
+my_age = 101
+puts "Hello, my name is #{name} and I'm #{my_age} years old."
+
+# array
+lunchbox = ['torta', 'mango', 'fries']
+
+# hash - key: value pair
+students = {"Abraham": "pre-law", "Brenda": "voice actress", "Cole": "jokester"}
+
 # class example
 class Developer
   def initialize(name)
@@ -23,8 +37,3 @@ end
 
 dev = Developer.new("Jasmine")
 dev.code
-
-total_pumpkins = 5 + 4
-stoop_pumpkins = total_pumpkins + 19
-
-puts "I had #{total_pumpkins}, but then my friend #{friend} dropped off more. Now I have #{stoop_pumpkins}."
