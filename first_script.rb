@@ -1,1 +1,5 @@
-puts "This is my first Ruby script!"
+# my first Ruby script
+
+puts "Give me a number"
+
+number = gets.to_i
