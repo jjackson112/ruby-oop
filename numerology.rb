@@ -61,3 +61,17 @@ def run
 end
 
 run
+
+# create object
+# @birthdate, @number + @message become instance variables
+
+class NumerologyReading
+  def initialize(birthdate)
+    @birthdate = birthdate
+  end
+
+  def birthdate
+
+end
+
+reading = NumerologyReading.new
