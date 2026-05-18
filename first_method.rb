@@ -5,10 +5,12 @@ end
 my_method
 
 # method that accepts an argument then refactors to determine time of day
-def greeting(name)
-
+def determine_current_hour
   current_time = Time.new
   current_hour = current_time.hour
+end
+
+def greeting(name)
 
   if (current_hour > 3 && current_hour < 12)
     time = "morning"
