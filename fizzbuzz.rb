@@ -16,3 +16,6 @@ while i <= 100
     puts i 
   end
 end
+
+# cleaner code 
+# (1..100).each do |i|
