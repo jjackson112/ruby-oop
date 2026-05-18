@@ -51,8 +51,11 @@ end
 def run
   puts "What's your birthdate? (MMDDYYYY)"
   birthdate = gets.chomp
-  return "Invalid birthdate" unless birthdate.match?(/^\d{8}$/)
-
+  unless birthdate.match?(/^\d{8}$/)
+    puts "Invalid birthdate."
+    exit
+  end
+  
   reading = NumerologyReading.new(birthdate)
 
   puts reading.message
