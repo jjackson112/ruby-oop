@@ -66,12 +66,20 @@ run
 # @birthdate, @number + @message become instance variables
 
 class NumerologyReading
+  attr_accessor :birthdate, :number
+
   def initialize(birthdate)
     @birthdate = birthdate
+    @number = calculate_number
   end
 
-  def birthdate
+  def calculate_number
 
+  end
+
+  def message 
+  
+  end
 end
 
 reading = NumerologyReading.new
