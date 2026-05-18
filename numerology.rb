@@ -9,7 +9,7 @@ end
 # chars turns '07141991' into an array + .map(&:to_i) converts each character to an integer + .sum adds them
 
 # calculate the birth path number
-def get_birth_path_number
+def get_birth_path_number(birthdate)
   number = birthdate.chars.map(&:to_i).sum
 
   while number > 9
