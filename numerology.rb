@@ -1,7 +1,5 @@
 # input → transform → calculate → output
 
-puts "What's your birthdate? It must be in this format MMDDYYYY."
-
 def get_birthdate
   birthdate = gets.chomp # rm hidden newline
 end  
