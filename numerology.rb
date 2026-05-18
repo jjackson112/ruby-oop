@@ -46,3 +46,19 @@ def get_message(number)
     puts "Uh oh! Your birth path number is not 1-9! But you have an interesting soul!"
   end
 end
+
+#  run app
+def run
+  puts "What's your birthdate? It must be in this format MMDDYYYY."
+
+  birthdate = gets.chomp
+
+  number = get_birth_path_number(birthdate)
+
+  message = get_message(number)
+
+  puts "Your numerology number is #{number}."
+  puts message
+end
+
+run
