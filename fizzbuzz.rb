@@ -4,7 +4,7 @@
 # If divisible by both 3 and 5 print FizzBuzz
 # use modulo operator
 
-i = 0
+i = 1
 while i < 101
   if i%3 == 0 && i%5 == 0 # divides evenly
     puts "FizzBuzz"
@@ -13,6 +13,6 @@ while i < 101
   elsif i%5 == 0
     puts "Buzz"
   else
-    number 
+    puts i 
   end
 end
