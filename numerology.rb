@@ -6,6 +6,7 @@
 class NumerologyReading
   puts "What's your birthdate? (MMDDYYYY)"
   birthdate = gets.chomp
+  return "Invalid birthdate" unless birthdate.match?(/^\d{8}$/)
 
   reading = NumerologyReading.new(birthdate)
 
