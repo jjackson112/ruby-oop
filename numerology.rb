@@ -4,7 +4,8 @@
 # @birthdate, @number + @message become instance variables
 
 class NumerologyReading
-  attr_accessor :birthdate, :number
+  attr_accessor :birthdate # can change
+  attr_reader :number # is read, doesn't change
 
   def initialize(birthdate)
     @birthdate = birthdate
