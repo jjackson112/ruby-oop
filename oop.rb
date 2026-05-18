@@ -1,3 +1,6 @@
+# getters read values while setters change value
+# you call methods, not accessing variables
+
 class Flower
     def set_name=(flower_name)
         @name = flower_name

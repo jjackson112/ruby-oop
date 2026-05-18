@@ -57,6 +57,7 @@ def run
 
   "Your numerology number is #{number}."
   puts message
+  print "Would you like another reading? (y/n)"
 end
 
 run
