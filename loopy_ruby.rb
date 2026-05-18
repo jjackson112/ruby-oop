@@ -4,7 +4,7 @@
 puts "Do you find me annoying? (Y/N)"
 answer = gets.chomp.downcase
 
-while (answer = n)
+while (answer.downcase == "n")
   puts "Do you find me annoying? (Y/N)"
   answer = gets.chomp.downcase
 end
