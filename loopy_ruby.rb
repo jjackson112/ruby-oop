@@ -16,3 +16,15 @@ end
 
 #  break if answer == "y"
 # end
+
+# love note exercise
+state_of_being = "good"
+
+while state_of_being == "good"
+  puts "I love you"
+
+  puts "Are you good or bad?"
+  state_of_being = gets.chomp.downcase
+end
+
+puts "I still love you"
