@@ -20,11 +20,23 @@ end
 # love note exercise
 state_of_being = "good"
 
-while state_of_being == "good"
-  puts "I love you"
+while state_of_being
+  if state_of_being == "good"
+    puts "I love you"
+  elsif state_of_being == "bad"
+    puts "I still love you"
+    break
+  end
 
   puts "Are you good or bad?"
   state_of_being = gets.chomp.downcase
 end
 
-puts "I still love you"
+# Each method - built in method, stops loop when there are no more elements
+all_tweets = [
+  "My 1st tweet!", "My 2nd tweet!", "My last tweet"
+]
+
+all_tweets.each do | tweet |
+  puts tweet 
+end
