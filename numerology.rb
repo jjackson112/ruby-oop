@@ -1,17 +1,10 @@
 # input → transform → calculate → output
 
-# create object
+# create object - Classes don't run the program
 # @birthdate, @number + @message become instance variables
 
 class NumerologyReading
-  puts "What's your birthdate? (MMDDYYYY)"
-  birthdate = gets.chomp
-  return "Invalid birthdate" unless birthdate.match?(/^\d{8}$/)
-
-  reading = NumerologyReading.new(birthdate)
-
-  attr_accessor :birthdate # can change
-  attr_reader :number # is read, doesn't change
+  attr_reader :birthdate, :number # is read, doesn't change
 
   def initialize(birthdate)
     @birthdate = birthdate
@@ -25,7 +18,7 @@ class NumerologyReading
       number = number.digits.sum # already an array with the sum of all integers - no need to convert back to string
     end
 
-  number
+    number
   end
 
   def message 
@@ -52,9 +45,20 @@ class NumerologyReading
     else
       "Uh oh! Your birth path number is not 1-9! But you have an interesting soul!"
     end
-    puts reading.message
   end
 end
+
+def run
+  puts "What's your birthdate? (MMDDYYYY)"
+  birthdate = gets.chomp
+  return "Invalid birthdate" unless birthdate.match?(/^\d{8}$/)
+
+  reading = NumerologyReading.new(birthdate)
+
+  puts reading.message
+end
+ run
+
 
 # use array syntax to access each element (number) in the birthdate, convert each one to an integer, and add them all together
 # number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
