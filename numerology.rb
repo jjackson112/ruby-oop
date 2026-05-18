@@ -24,7 +24,7 @@ class NumerologyReading
 
   def message 
   # single digit path
-    case number
+    case @number
     when 1
       "Your numerology number is #{number}. \nOne is the leader. The number one indicates the abiliry to stand alone, and is a strong vibration. Ruled by the Sun."
     when 2
