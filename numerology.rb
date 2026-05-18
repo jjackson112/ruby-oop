@@ -4,6 +4,11 @@
 # @birthdate, @number + @message become instance variables
 
 class NumerologyReading
+  puts "What's your birthdate? (MMDDYYYY)"
+  birthdate = gets.chomp
+
+  reading = NumerologyReading.new(birthdate)
+
   attr_accessor :birthdate # can change
   attr_reader :number # is read, doesn't change
 
@@ -24,7 +29,7 @@ class NumerologyReading
 
   def message 
   # single digit path
-    case @number
+    case number
     when 1
       "Your numerology number is #{number}. \nOne is the leader. The number one indicates the abiliry to stand alone, and is a strong vibration. Ruled by the Sun."
     when 2
@@ -46,40 +51,10 @@ class NumerologyReading
     else
       "Uh oh! Your birth path number is not 1-9! But you have an interesting soul!"
     end
+    puts reading.message
   end
 end
-
-puts.message
 
 # use array syntax to access each element (number) in the birthdate, convert each one to an integer, and add them all together
 # number = birthdate[0].to_i + birthdate[1].to_i + birthdate[2].to_i + birthdate[3].to_i + birthdate[4].to_i + birthdate[5].to_i + birthdate[6].to_i + birthdate[7].to_i
 # chars turns '07141991' into an array + .map(&:to_i) converts each character to an integer + .sum adds them
-
-# calculate the birth path number
-def get_birth_path_number(birthdate)
-  number = birthdate.chars.map(&:to_i).sum
-
-  while number > 9
-    number = number.digits.sum # already an array with the sum of all integers - no need to convert back to string
-  end
-
-  number
-end
-
-#  run app
-def run
-  puts "What's your birthdate? It must be in this format MMDDYYYY."
-
-  birthdate = gets.chomp
-
-  number = get_birth_path_number(birthdate)
-
-  message = get_message(number)
-
-  "Your numerology number is #{number}."
-  puts message
-  print "Would you like another reading? (y/n)"
-end
-
-run
-
