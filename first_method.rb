@@ -5,6 +5,7 @@ end
 my_method
 
 # method that accepts an argument then refactors to determine time of day
+# Python uses return keyword while Ruby automatically returns the last value - no need for return statement
 def determine_current_hour
   current_time = Time.new
   current_hour = current_time.hour
