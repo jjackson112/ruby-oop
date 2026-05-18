@@ -55,7 +55,7 @@ def run
 
   message = get_message(number)
 
-  puts "Your numerology number is #{number}."
+  "Your numerology number is #{number}."
   puts message
 end
 
